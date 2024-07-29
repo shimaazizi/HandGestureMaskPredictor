@@ -6,6 +6,29 @@ This repository contains code for a segmentation project using the UNet architec
 ![GitHub stars](https://img.shields.io/github/stars/shimaazizi/HandGestureMaskPredictor?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/shimaazizi/HandGestureMaskPredictor?style=social)
 
+
+## Overview
+
+Our model has been trained for 80 epochs and evaluated on a dataset consisting of 196 images. The dataset is divided into 124 train samples, 32 validation samples, and 40 test samples. The performance metrics for the model on the test set are as follows:
+<table align="center">
+  <tr>
+    <th>Metric</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Test Loss</b></td>
+    <td><span style="color:red">0.17</span></td>
+  </tr>
+  <tr>
+    <td><b>Test Dice Coefficient</b></td>
+    <td><span style="color:green">0.89</span></td>
+  </tr>
+  <tr>
+    <td><b>Test Accuracy</b></td>
+    <td><span style="color:blue">0.93</span></td>
+  </tr>
+</table>
+
 ## Table of Contents
 
 - 📚 [Dataset](#dataset)
