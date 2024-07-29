@@ -2,35 +2,38 @@
 
 This repository contains code for a segmentation project using the UNet architecture. The project involves training a deep learning model to perform image segmentation on a custom dataset of hand gestures.
 
+![GitHub repo size](https://img.shields.io/github/repo-size/shimaazizi/HandGestureMaskPredictor)
+![GitHub stars](https://img.shields.io/github/stars/shimaazizi/HandGestureMaskPredictor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/shimaazizi/HandGestureMaskPredictor?style=social)
 
-### Table of Contents
-* Dataset
-* Installation
+## Table of Contents
+
+- 📚 [Dataset](#dataset)
+- 💻 [Installation](#installation)
+- 🛠️ [Data Preparation](#data-preparation)
+- 🧠 [Model](#model)
+- 🔧 [Utils](#utils)
+- 🚀 [Training](#training)
+- 📈 [Result](#result)
+
+## Dataset
+
+The dataset is organized into the following directories:
+
+- **Dataset**
+    - `Fist`
+    - `OpenPalm`
+    - `PeaceSign`
+    - `ThumbsUp`
+
+- **New_Mask**
+    - `Fist_Mask`
+    - `OpenPalm_Mask`
+    - `PeaceSign_Mask`
+    - `ThumbsUp_Mask`
 
 
-### Dataset
-* Dataset
-  
-    ├── Fist
-  
-    ├── OpenPalm
-  
-    ├── PeaceSign
-  
-    ├── ThumbsUp
-  
-* New_Mask
-  
-    ├── Fist_Mask
-  
-    ├── OpenPalm_Mask
-  
-    ├── PeaceSign_Mask
-  
-    ├── ThumbsUp_Mask
-
-
-### Installation
+## Installation
 1. Clone the repository:
    
    git clone https://github.com/shimaazizi/HandGestureMaskPredictor.git
@@ -39,16 +42,25 @@ This repository contains code for a segmentation project using the UNet architec
 
 3. Install the required packages:
    
-   ```bash
-   pip install -r requirements.txt
-   ```
+   `pip install -r requirements.txt`
+
+   
+The librarie we need:
+
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
+[![PyTorch 2.4.0](https://img.shields.io/badge/PyTorch-2.4.0-red)](https://pytorch.org/get-started/locally/)
+[![TorchVision 0.19.0](https://img.shields.io/badge/TorchVision-0.19.0-orange)](https://pytorch.org/vision/stable/index.html)
+[![NumPy 2.0.1](https://img.shields.io/badge/NumPy-2.0.1-blue)](https://numpy.org/)
+[![Matplotlib 3.9.1](https://img.shields.io/badge/Matplotlib-3.9.1-blueviolet)](https://matplotlib.org/)
+[![Scikit-Learn 1.5.1](https://img.shields.io/badge/Scikit--Learn-1.5.1-green)](https://scikit-learn.org/stable/)
+[![Pillow 10.4.0](https://img.shields.io/badge/Pillow-10.4.0-yellow)](https://pillow.readthedocs.io/en/stable/)
 
 
-### Data Preparation
+## Data Preparation
 This part provides a PyTorch-based pipeline for image segmentation, including data loading and preprocessing. 
 
 
-### Model
+## Model
 This part provides a PyTorch implementation of the U-Net architecture for image segmentation.
 
 *Encoder*: Captures image features at multiple scales using a series of convolutional blocks and pooling layers.
@@ -58,7 +70,7 @@ This part provides a PyTorch implementation of the U-Net architecture for image 
 *U-Net*: Combines the encoder and decoder, with a final convolutional layer to produce the segmentation map.
 
 
-### utils
+## utils
 This part includes functions to evaluate and visualize image segmentation model performance using PyTorch.
 
 Functions:
@@ -70,8 +82,8 @@ Functions:
 * visualize_prediction (model, test_loader, device, num_classes=4): Visualizes model predictions alongside true masks and original images
 
 
-### Training
-This script trains and evaluates a U-Net model for image segmentation using PyTorch.
+## Training
+This module trains and evaluates a U-Net model for image segmentation using PyTorch.
 
 Functions:
 
@@ -80,8 +92,8 @@ Functions:
 * evaluate_model(model, test_loader, device='cuda'): Evaluates the model on the test set
 
 
-### Result 
-in main.py integrates dataset loading, model training, evaluation, and visualization.
+## Result 
+in main.py script integrates dataset loading, model training, evaluation, and visualization.
 
 * create_dataloaders: Loads and preprocesses the dataset.
  
