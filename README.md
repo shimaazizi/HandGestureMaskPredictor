@@ -86,11 +86,11 @@ This part provides a PyTorch-based pipeline for image segmentation, including da
 ## 🧠Model
 This part provides a PyTorch implementation of the U-Net architecture for image segmentation.
 
-*Encoder*: Captures image features at multiple scales using a series of convolutional blocks and pooling layers.
+* Encoder: Captures image features at multiple scales using a series of convolutional blocks and pooling layers.
 
-*Decoder*: Upsamples feature maps and concatenates them with corresponding encoder outputs to reconstruct the segmented image.
+* Decoder: Upsamples feature maps and concatenates them with corresponding encoder outputs to reconstruct the segmented image.
 
-*U-Net*: Combines the encoder and decoder, with a final convolutional layer to produce the segmentation map.
+* U-Net: Combines the encoder and decoder, with a final convolutional layer to produce the segmentation map.
 
 
 ## 🔧utils
