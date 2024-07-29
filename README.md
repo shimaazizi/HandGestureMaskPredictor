@@ -16,7 +16,7 @@ This repository contains code for a segmentation project using the UNet architec
 - 🚀 [Training](#training)
 - 📈 [Result](#result)
 
-## Dataset
+## 📚Dataset
 
 The dataset is organized into the following directories:
 
@@ -33,7 +33,7 @@ The dataset is organized into the following directories:
     - `ThumbsUp_Mask`
 
 
-## Installation
+## 💻Installation
 1. Clone the repository:
    
    git clone https://github.com/shimaazizi/HandGestureMaskPredictor.git
@@ -56,11 +56,11 @@ The librarie we need:
 [![Pillow 10.4.0](https://img.shields.io/badge/Pillow-10.4.0-yellow)](https://pillow.readthedocs.io/en/stable/)
 
 
-## Data Preparation
+## 🛠️Data Preparation
 This part provides a PyTorch-based pipeline for image segmentation, including data loading and preprocessing. 
 
 
-## Model
+## 🧠Model
 This part provides a PyTorch implementation of the U-Net architecture for image segmentation.
 
 *Encoder*: Captures image features at multiple scales using a series of convolutional blocks and pooling layers.
@@ -70,7 +70,7 @@ This part provides a PyTorch implementation of the U-Net architecture for image 
 *U-Net*: Combines the encoder and decoder, with a final convolutional layer to produce the segmentation map.
 
 
-## utils
+## 🔧utils
 This part includes functions to evaluate and visualize image segmentation model performance using PyTorch.
 
 Functions:
@@ -82,7 +82,7 @@ Functions:
 * visualize_prediction (model, test_loader, device, num_classes=4): Visualizes model predictions alongside true masks and original images
 
 
-## Training
+## 🚀Training
 This module trains and evaluates a U-Net model for image segmentation using PyTorch.
 
 Functions:
@@ -92,7 +92,7 @@ Functions:
 * evaluate_model(model, test_loader, device='cuda'): Evaluates the model on the test set
 
 
-## Result 
+## 📈Result 
 in main.py script integrates dataset loading, model training, evaluation, and visualization.
 
 * create_dataloaders: Loads and preprocesses the dataset.
