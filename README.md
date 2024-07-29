@@ -39,7 +39,9 @@ This repository contains code for a segmentation project using the UNet architec
 
 3. Install the required packages:
    
+   ```bash
    pip install -r requirements.txt
+   ```
 
 
 ### Data Preparation
