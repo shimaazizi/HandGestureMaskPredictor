@@ -106,4 +106,3 @@ in main.py script integrates dataset loading, model training, evaluation, and vi
 * visualize_prediction: Visualizes the model predictions compared to the true masks.
 
 
-
