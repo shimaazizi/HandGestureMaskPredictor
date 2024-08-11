@@ -5,6 +5,7 @@ from torchvision import transforms
 from model.model import UNet
 import matplotlib.pyplot as plt
 
+from torchvision.transforms import v2
 
 device = torch.device('cpu')
 
@@ -23,7 +24,7 @@ def get_segments(model, binary_image):
 
     preprocess = transforms.Compose([
     transforms.Resize((128, 128)),
-    transforms.RandomVerticalFlip(p=0.5),
+    
     transforms.ToTensor(),
     ])
 
@@ -31,6 +32,7 @@ def get_segments(model, binary_image):
     image = input_tensor.unsqueeze(0)
 
     with torch.no_grad():
+        image = transforms.v2.functional.vertical_flip(image)
         output = model(image)
 
     _, preds = torch.max(output, dim=1)
