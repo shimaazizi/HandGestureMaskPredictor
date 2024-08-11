@@ -14,7 +14,7 @@ app = FastAPI(
 )
 
 @app.post("/image segmentation")
-async def get_segmentation_map(file: bytes = File(...)):
+async def get_segmentation(file: bytes = File(...)):
         """Get segmentation maps from image file"""
         segmented_image = get_segments(model, file)
         bytes_io = io.BytesIO()
