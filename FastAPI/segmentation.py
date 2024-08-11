@@ -23,6 +23,7 @@ def get_segments(model, binary_image):
 
     preprocess = transforms.Compose([
     transforms.Resize((128, 128)),
+    transforms.RandomVerticalFlip(p=0.5),
     transforms.ToTensor(),
     ])
 
